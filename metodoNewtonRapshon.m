@@ -1,9 +1,9 @@
 #METODO DE NEWTON RAPSHON
 clc;
-funcion = input('Escribe la f(x) entre parentesis: ','s')
+funcion = input('Escribe la f(x) : ','s')
 funcion = inline(funcion);
 
-derivada = input('Escribe la df(x) entre parentesis: ','s') 
+derivada = input('Escribe la df(x) : ','s') 
 derivada = inline(derivada);
 
 xi = input('Ingrese el xi inicial: ');
@@ -13,7 +13,7 @@ i=1;
 
 function ea = errora(xa,xp)
     ea = abs(((xa-xp)/xa)*100);
-end
+endfunction
 
 
 if derivada(xi) == 0
